@@ -28,8 +28,8 @@ I'm sure you will manage. I have faith in you. Go champion.
 
 #### v1.0 -> v1.1
 
-*Moved the files to a superfolder `insult`
-+Added the `tool` package
-+Added vocabulary
-*Added, edited and removed some phrase structures and odds
-*Vocabulary words and phrases are now functions, allowing for some of them to incorporate changing/random elements
+* Moved the files to a superfolder `insult`
++ Added the `tool` package
++ Added vocabulary
+* Added, edited and removed some phrase structures and odds
+* Vocabulary words and phrases are now functions, allowing for some of them to incorporate changing/random elements
