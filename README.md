@@ -29,7 +29,7 @@ Simply call the method `fetch` from the object `insult.Insult`, then go weep in 
 Disclaimer
 ----------
 
-I am in no way responsible for your wimpy ass hypothetically getting offended at any of the insults you might generate. If you know you get offended easily or if you are from Tumblr, then please reconsider using an insult generator.
+I am in no way responsible for your wimpy ass hypothetically getting offended at any of the insults you might generate. If you know you get offended easily or if you are from Tumblr, then please consider not using an insult generator.
 
 If you do use it nonetheless and it does offend you, please take a minute to reflect on the following question: would you get offended at the word you just read if you were reading it as an entry in a dictionary instead?
 
