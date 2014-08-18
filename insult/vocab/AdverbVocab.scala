@@ -6,12 +6,11 @@ object AdverbVocab extends Vocab {
       "incredibly",
       "pointlessly",
       "unnaturally"
-    )
+    ).toVocab
 }
 
 object AdverbGenericVocab extends Vocab {
     override def set = Seq(
-      "fully",
-      "stakingly"
-    )
+      "fully"
+    ).toVocab
 }

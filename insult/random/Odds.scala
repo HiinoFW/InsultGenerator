@@ -1,6 +1,6 @@
 package random
 
-import tool.Random
+import tool.Random._
 
 class Odds[T](itemset: Seq[T]) {
   val items = itemset
@@ -12,7 +12,7 @@ class Odds[T](itemset: Seq[T]) {
     oddset.items.foldLeft(new Odds[T](Seq()))(_.add(1, _))
   
   def get: T =
-    items(Random.get.nextInt(items.length))
+    items(rand.nextInt(items.length))
 }
 
 object OddBuilder {

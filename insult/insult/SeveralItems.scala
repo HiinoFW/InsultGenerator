@@ -1,7 +1,6 @@
 package insult
 
-import random.Odds
-import contents._
+import _root_.contents._
 
 abstract class SeveralItems(contents: Contents) extends ItemSet {
   def get = contents.get.map(_.get).flatten
@@ -9,7 +8,6 @@ abstract class SeveralItems(contents: Contents) extends ItemSet {
 
 object NounPhrase extends SeveralItems(NounPhraseContents)
 object NounLeft extends SeveralItems(NounLeftContents)
-object NounRight extends SeveralItems(NounRightContents)
 object Noun extends SeveralItems(NounContents)
 object AdverbStar extends SeveralItems(AdverbStarContents)
 object AdjectivePhrase extends SeveralItems(AdjectivePhraseContents)

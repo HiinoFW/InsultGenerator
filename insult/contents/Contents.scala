@@ -16,9 +16,9 @@ abstract class Contents {
 object NounPhraseContents extends Contents {
   override def set = {
     OddBuilder
-    .add(2, seq(Noun))
-    .add(1, seq(AdjectivePhrase, Conjonction(" "), NounRight))
-    .add(1, seq(NounLeft, Conjonction(" "), NounRight))
+    .add(1, seq(Noun))
+    .add(1, seq(AdjectivePhrase, Conjonction(" "), Noun))
+    .add(1, seq(NounLeft, Conjonction(" "), Noun))
   }
 }
 
@@ -27,14 +27,6 @@ object NounLeftContents extends Contents {
     OddBuilder
     .add(2, seq(Noun))
     .add(1, seq(AdjectivePhrase, Conjonction(" "), Noun))
-  }
-}
-
-object NounRightContents extends Contents {
-  override def set = {
-    OddBuilder
-    .add(2, seq(Noun))
-    .add(1, seq(Noun, Conjonction(" "), Noun))
   }
 }
 
@@ -50,16 +42,16 @@ object NounContents extends Contents {
 object AdjectivePhraseContents extends Contents {
   override def set = {
     OddBuilder
-    .add(2, seq(AdjectiveStar))
+    .add(3, seq(AdjectiveStar))
     .add(1, seq(AdverbStar, Conjonction(" "), AdjectiveStar))
-    .add(1, seq(AdjectiveStar, Conjonction(" "), AdjectiveStar))
+    .add(2, seq(AdjectiveStar, Conjonction(" "), AdjectiveStar))
   }
 }
 
 object AdverbStarContents extends Contents {
   override def set = {
     OddBuilder
-    .add(1, seq(Adverb))
+    .add(4, seq(Adverb))
     .add(1, seq(NounThing, AdverbGeneric))
   }
 }
@@ -67,7 +59,7 @@ object AdverbStarContents extends Contents {
 object AdjectiveStarContents extends Contents {
   override def set = {
     OddBuilder
-    .add(1, seq(Adjective))
+    .add(2, seq(Adjective))
     .add(1, seq(NounThing, AdjectiveGeneric))
   }
 }
@@ -75,8 +67,9 @@ object AdjectiveStarContents extends Contents {
 object SentenceContents extends Contents {
   override def set = {
     OddBuilder
-    .add(8, seq(Conjonction("you "), NounPhrase))
-    .add(1, seq(Participle, Conjonction(" "), NounPhrase))
+    .add(4, seq(Conjonction("you "), NounPhrase))
+    .add(2, seq(Participle, Conjonction(" "), NounPhrase))
+    .add(2, seq(Conjonction("you "), NounPhrase, Conjonction(" coupled with a "), NounPhrase))
     .add(1, seq(Participle, Conjonction(" "), NounPhrase, Conjonction(" coupled with a "), NounPhrase))
     .add(2, seq(NounPhrase, Preposition))
     // .add(1, seq(Special))

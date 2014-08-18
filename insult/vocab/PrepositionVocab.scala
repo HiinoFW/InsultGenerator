@@ -3,7 +3,7 @@ package vocab
 object PrepositionVocab extends Vocab {
   override def set = Seq(
       ", I fart in your general direction"
-      ," and your stupid collarbones"
+      ," with your stupid collarbones"
       ," with a hint of cranberry and autism"
       ,", you should be reorganized with battery acid"
       ,", your father smells of elderberries"
@@ -26,5 +26,7 @@ object PrepositionVocab extends Vocab {
       ,", you have enough extra chromosomes to make another person"
       ,", you're like the FurAffinity front page, full of dicks"
       ," with a snoot full of honeybees"
-    )
+      ,", your mom eats cat poop"
+      ,", I've met some pricks in my time but you're the fucking cactus"
+    ).toVocab
 }

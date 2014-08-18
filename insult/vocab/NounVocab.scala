@@ -1,5 +1,7 @@
 package vocab
 
+import tool.Random._
+
 object NounVocab extends Vocab {
   override def set = Seq(
       "cosplayer"
@@ -23,7 +25,6 @@ object NounVocab extends Vocab {
       ,"catdog"
       ,"triple nigger"
       ,"insitive ham"
-      ,"[GENERIC INSULT #6]"
       ,"bloated doushe"
       ,"sperglord"
       ,"titsucker"
@@ -34,6 +35,11 @@ object NounVocab extends Vocab {
       ,"teriyaki stick"
       ,"hockey puck"
       ,"nincompoop"
+      ,"vegemite"
+      ,"inbred"
+      ,"computer boy"
+    ).toVocab ++ Seq(
+    () => "[GENERIC INSULT #" + (rand nextInt 420 + 1) + "]"
     )
 }
 
@@ -59,6 +65,5 @@ object NounGenericVocab extends Vocab {
       ,"nugget"
       ,"waffle"
       ," sandwich"
-      ,"-infested"
-    )
+    ).toVocab
 }

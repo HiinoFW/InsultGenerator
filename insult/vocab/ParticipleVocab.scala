@@ -9,5 +9,5 @@ object ParticipleVocab extends Vocab {
       ,"you's a fucking"
       ,"you're kind of a"
       ,"you're some"
-    )
+    ).toVocab
 }

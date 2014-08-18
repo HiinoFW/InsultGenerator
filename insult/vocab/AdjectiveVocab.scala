@@ -28,7 +28,7 @@ object AdjectiveVocab extends Vocab {
       ,"hideous"
       ,"homo"
       ,"hassidic"
-    )
+    ).toVocab
 }
 
 object AdjectiveGenericVocab extends Vocab {
@@ -37,7 +37,7 @@ object AdjectiveGenericVocab extends Vocab {
       ,"happy"
       ,"-leveled"
       ,"-sized"
-      ,"-inducer"
+      ,"-inducing"
       ,"-inspired"
       ,"jacking"
       ,"licking"
@@ -45,5 +45,5 @@ object AdjectiveGenericVocab extends Vocab {
       ,"slurping"
       ,"soothing"
       ,"tastic"
-    )
+    ).toVocab
 }

@@ -25,5 +25,6 @@ object NounGenericableVocab extends Vocab {
       ,"tard"
       ,"cock"
       ,"flea"
-    )
+      ,"nook"
+    ).toVocab
 }

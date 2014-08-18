@@ -1,6 +1,6 @@
 package insult
 
-import vocab._
+import _root_.vocab._
 
 abstract class SingleItem extends ItemSet {
   override def get = Seq(this)
