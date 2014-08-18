@@ -6,7 +6,7 @@ Feel free to suggest some more vocabulary. I'm all up for short, funny, long, co
 
 ## Installation
 
-Just copy the sources.
+Copy the sources, compile them, etc.
 
 ## How To Get Burned
 
